@@ -158,9 +158,9 @@
                                 <p><label>Which tour package do you want to choose:</label></p>
                                 <div>
                                     <asp:RadioButtonList runat="server" ID="visitor_tour_package">
-                                        <asp:ListItem Text="Standard package: tour guide included" Value="Standard Package"></asp:ListItem>
-                                        <asp:ListItem Text="VIP package: tour guide and 4D movies included" Value="VIP Package"></asp:ListItem>
-                                        <asp:ListItem Text="Premium package: tour guide, 4D movies and a special oppotunity to creat your own comic included" Value="Premium Package"></asp:ListItem>
+                                        <asp:ListItem Text="Standard package ($100 per person): tour guide included" Value="Standard Package"></asp:ListItem>
+                                        <asp:ListItem Text="VIP package ($200 per person): tour guide and 4D movies included" Value="VIP Package"></asp:ListItem>
+                                        <asp:ListItem Text="Premium package ($400 per person): tour guide, 4D movies and a special oppotunity to creat your own comic included" Value="Premium Package"></asp:ListItem>
                                     </asp:RadioButtonList>
                                     <asp:RequiredFieldValidator runat="server" EnableClientScript="true" ErrorMessage="Please choose one tour package" ControlToValidate="visitor_tour_package"></asp:RequiredFieldValidator>
                                 </div>
