@@ -104,6 +104,7 @@
                             <option value="2022">2022</option>
                         </select>
                         <label for="html_number_of_visitor">How many people in your group:</label>
+                        <p>Note: If you go with more than 10 friends, please contact our Customer Service.</p>
                         <select id="html_number_of_visitor">
                             <option value="0">0</option>
                             <option value="1" selected>1</option>
@@ -116,21 +117,21 @@
                             <option value="8">8</option>
                             <option value="9">9</option>
                             <option value="10">10</option>
-                            <option value="10+">More than 10</option>
                         </select>
                     </div>
                     <div>
                         <label>What section do you want to visit:</label>
-                        <div>
-                            <input type="checkbox" id="html_visitor_favorite_comic1" name="html_visitor_favorite_comic1" value="Marvel comic section" /><label for="html_visitor_favorite_comic1">Marvel Comics section ($400/person)</label>
-                            <input type="checkbox" id="html_visitor_favorite_comic2" name="html_visitor_favorite_comic2" value="DC comics section" /><label for="html_visitor_favorite_comic2">DC Comics section ($200/person)</label>
-                            <input type="checkbox" id="html_visitor_favorite_comic3" name="html_visitor_favorite_comic3" value="Manga section" /><label for="html_visitor_favorite_comic3">Manga section ($100/person)</label>
+                        <select id="html_visitor_favorite_section">
+                            <option value="Marvel comic section">Marvel Comics section</option>
+                            <option value="DC comics section">DC Comics section</option>
+                            <option value="Manga section">Manga section</option>
+                        </select>
                         </div>
-                        <label>What additional service do you want to include in your tour:</label>
+                        <label>What tour package do you want to choose:</label>
                         <div>
-                            <input type="checkbox" id="html_additional_service1" name="html_additional_service1" value="Tour guide" /><label for="html_additional_service1">Tourguide ($10/person)</label>
-                            <input type="checkbox" id="html_additional_service2" name="html_additional_service2" value="4D Movies" /><label for="html_additional_service2">4D Movies ($20/person)</label>
-                            <input type="checkbox" id="html_additional_service3" name="html_additional_service3" value="Creating your own comic" /><label for="html_additional_service3">Creating your own comic ($30/person)</label>
+                            <input type="radio" id="standard_package" name="visitor_tour_package"/><label for="standard_package">Standard package: tour guide included</label>
+                            <input type="radio" id="VIP_package" name="visitor_tour_package"/><label for="VIP_package">VIP package: tour guide and 4D movies included</label>
+                            <input type="radio" id="premium_package" name="visitor_tour_package"><label for="premium_package">Premium package: tour guide, 4D movies and a special oppotunity to creat your own comic included</label>
                         </div>
                     </div>
                 </fieldset>
