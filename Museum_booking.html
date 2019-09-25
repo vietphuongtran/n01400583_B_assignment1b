@@ -1,0 +1,168 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>The Toronto Comic Museum Booking Form</title>
+    <meta name="description" content="Toronto Comic Museum Booking Form" />
+</head>
+<body>
+    <main>
+        <h1>The Toronto Comic Museum Booking Form</h1>
+        <p>A journey to Toronto will never be completed without a trip to the famous Toronto Comic Museum.</p>
+        <p>Home to thousands of comic, manga and anime all over the world, this is the must-visit place whether you are a geeky-head or not.</p>
+        <p><strong>Highlights:</strong></p>
+        <ul>
+            <li>Contained some of the oldest comic books in the world in mint condition</li>
+            <li>Suitable for all ages</li>
+            <li>Chance to talk and receive autograph from famous comic book writers</li>
+        </ul>
+        <form method="post" action="https://postman-echo.com/post">
+            <section>
+                <h2>Please tell us about yourself:</h2>
+                <fieldset>
+                    <legend><strong>Personal information</strong></legend>
+                    <div>
+                        <label for="html_visitor_fname">First name:</label>
+                        <input type="text" id="html_visitor_fname" name="html_visitor_fname" placeholder="John" />
+                        <label for="html_visitor_lname">Last name:</label>
+                        <input type="text" id="html_visitor_lname" name="html_visitor_lname" placeholder="Smith" />
+                    </div>
+                    <div>
+                        <label for="html_visitor_phonenumber">Phone number:</label>
+                        <input type="number" id="html_visitor_phonenumber" name="html_visitor_phonenumber" placeholder="905 569 2906" />
+                        <label for="html_visitor_occupation">Occupation:</label>
+                        <input type="Text" id="html_visitor_occupation" name="html_visitor_occupation" placeholder="Web Developer" />
+                    </div>
+                    <div>
+                        <label for="html_visitor_address">Address:</label>
+                        <input type="Text" id="html_visitor_address" name="html_visitor_address" size="40" placeholder="123 John Street, Mississauga, Toronto, ON" />
+                        <label for="html_visitor_zipcode">Zip code:</label>
+                        <input type="text" id="html_visitor_zipcode" name="html_vistor_zipcode" placeholder="L1T N4C" />
+                    </div>
+                </fieldset>
+            </section>
+            <section>
+                <h2>Please tell us the detail of your tour:</h2>
+                <fieldset>
+                    <legend><strong>Your visiting details</strong></legend>
+                    <div>
+                        <label for="html_visitor_scheduled_date">When do you want to visit us:</label>
+                        <select id="html_visitor_scheduled_date">
+                            <option value="">Date</option>
+                            <option value="01">01</option>
+                            <option value="02">02</option>
+                            <option value="03">03</option>
+                            <option value="04">04</option>
+                            <option value="05">05</option>
+                            <option value="06">06</option>
+                            <option value="07">07</option>
+                            <option value="08">08</option>
+                            <option value="09">09</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                            <option value="21">21</option>
+                            <option value="22">22</option>
+                            <option value="23">23</option>
+                            <option value="24">24</option>
+                            <option value="25">25</option>
+                            <option value="26">26</option>
+                            <option value="27">27</option>
+                            <option value="28">28</option>
+                            <option value="29">29</option>
+                            <option value="30">30</option>
+                            <option value="31">31</option>
+                        </select>
+                        <select id="html_visitor_scheduled_month">
+                            <option value="">Month</option>
+                            <option value="January">January</option>
+                            <option value="February">February</option>
+                            <option value="March">March</option>
+                            <option value="April">April</option>
+                            <option value="May">May</option>
+                            <option value="June">June</option>
+                            <option value="July">July</option>
+                            <option value="August">August</option>
+                            <option value="September">September</option>
+                            <option value="October">October</option>
+                            <option value="November">Novermber</option>
+                            <option value="December">December</option>
+                        </select>
+                        <select id="html_visitor_scheduled_year">
+                            <option value="">Year</option>
+                            <option value="2019">2019</option>
+                            <option value="2020">2020</option>
+                            <option value="2021">2021</option>
+                            <option value="2022">2022</option>
+                        </select>
+                        <label for="html_number_of_visitor">How many people in your group:</label>
+                        <select id="html_number_of_visitor">
+                            <option value="0">0</option>
+                            <option value="1" selected>1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="10+">More than 10</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label>What section do you want to visit:</label>
+                        <div>
+                            <input type="checkbox" id="html_visitor_favorite_comic1" name="html_visitor_favorite_comic1" value="Marvel comic section" /><label for="html_visitor_favorite_comic1">Marvel Comics section ($400/person)</label>
+                            <input type="checkbox" id="html_visitor_favorite_comic2" name="html_visitor_favorite_comic2" value="DC comics section" /><label for="html_visitor_favorite_comic2">DC Comics section ($200/person)</label>
+                            <input type="checkbox" id="html_visitor_favorite_comic3" name="html_visitor_favorite_comic3" value="Manga section" /><label for="html_visitor_favorite_comic3">Manga section ($100/person)</label>
+                        </div>
+                        <label>What additional service do you want to include in your tour:</label>
+                        <div>
+                            <input type="checkbox" id="html_additional_service1" name="html_additional_service1" value="Tour guide" /><label for="html_additional_service1">Tourguide ($10/person)</label>
+                            <input type="checkbox" id="html_additional_service2" name="html_additional_service2" value="4D Movies" /><label for="html_additional_service2">4D Movies ($20/person)</label>
+                            <input type="checkbox" id="html_additional_service3" name="html_additional_service3" value="Creating your own comic" /><label for="html_additional_service3">Creating your own comic ($30/person)</label>
+                        </div>
+                    </div>
+                </fieldset>
+            </section>
+            <section>
+                <h3>Additional information</h3>
+                <p>We provide comic-inspired meal to make your trip more delightful. Please answer the following question to help our preparation:</p>
+                <div>
+                    <label>Do you have any allergy?</label>
+                    <div>
+                        <input type="radio" id="html_visitor_allergy_yes" name="visitor_allergy" /><label for="html_visitor_allergy_yes">Yes</label>
+                        <input type="radio" id="html_visitor_allergy_no" name="visitor_allergy" /><label for="html_visitor_allergy_no">No</label>
+                    </div>
+                    <p>If yes, please specify which type of food you are allergic to:</p>
+                    <input type="text" id="html_specify_visitor_allergy" name="html_specify_visitor_allergy" />
+                </div>
+                <div>
+                    <label>Are you a vegetarian?</label>
+                    <div>
+                        <input type="radio" id="html_visitor_vegetarian_yes" name="html_visitor_vegetarian" /><label for="html_visitor_vegetarian_yes">Yes</label>
+                        <input type="radio" id="html_visitor_vegetarian_no" name="html_visitor_vegetarian" /><label for="html_visitor_vegetarian_no">No</label>
+                    </div>
+                </div>
+                <div>
+                    <label for="html_visitor_request">If you have any special request. Please tell us below:</label>
+                    <div>
+                        <textarea id="html_visitor_request" name="html_visitor_request" rows="5" cols="35"></textarea>
+                    </div>
+                </div>
+                <button type="submit" id="submit" name="submit">Submit</button>
+            </section>
+        </form>
+    </main>
+</body>
+</html>
