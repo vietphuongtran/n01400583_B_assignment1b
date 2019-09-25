@@ -31,7 +31,10 @@ namespace n01400583_assignment1b
                     string Visitor_Alergy = visitor_allergy.Text.ToString();
                     string Specify_Visitor_Alergy = specify_visitor_allergy.Text.ToString();
                     string Visitor_Vegetarian = visitor_vegetarian.Text.ToString();
-                    string Visitor_Request = visitor_request.InnerText.ToString();                    
+                    string Visitor_Request = visitor_request.InnerText.ToString();
+                    int Premium_Package = 400 * Number_Of_Visitor;
+                    int VIP_Package = 200 * Number_Of_Visitor;
+                    int Standard_Package = 100 * Number_Of_Visitor;
 
                     confirmbox.InnerHtml = "Thank you for registering. The most wonderful adventure is waiting for you ahead. Here is a summary of your booking: <br>";
                     confirmbox.InnerHtml += " First name: " + Visitor_Fname + "<br>";
@@ -52,18 +55,18 @@ namespace n01400583_assignment1b
                     }
                     if (Visitor_Tour_Package == "Standard Package")
                     {
-                        confirmbox.InnerHtml += "Your ticket price is $100 per person <br>";
-                        //confirmbox.InnerHtml += "Your ticket price is 100*aspx_number_of_visitor";
+                        //confirmbox.InnerHtml += "Your ticket price is $100 per person <br>";
+                        confirmbox.InnerHtml += "Your ticket price is "+ Standard_Package +" in total"+"<br>";
                     }
                     if (Visitor_Tour_Package == "VIP Package")
                     {
-                        confirmbox.InnerHtml += "Your ticket price is $200 per person <br>";
-                        //confirmbox.InnerHtml += "Your ticket price = 200*aspx_number_of_visitor";
+                        //confirmbox.InnerHtml += "Your ticket price is $200 per person <br>";
+                        confirmbox.InnerHtml += "Your ticket price is "+ VIP_Package +" in total"+"<br>";
                     }
                     if (Visitor_Tour_Package == "Premium Package")
                     {
-                        confirmbox.InnerHtml += "Your ticket price is $400 per person <br>";
-                        //confirmbox.InnerHtml += "Your ticket price = 400*aspx_number_of_visitor";
+                        //confirmbox.InnerHtml += "Your ticket price is $400 per person <br>";
+                        confirmbox.InnerHtml += "Your ticket price is " + Premium_Package + " in total" + "<br>";
                     }
                     confirmbox.InnerHtml += " We will send a confirmation code via your email: " + Visitor_Email + " and your phone number: " + Visitor_Phone_Number + "<br>";
                     confirmbox.InnerHtml += " Ticket will be sent to you via express mail to the address: " + Visitor_Address + ", " + Visitor_Zipcode + "<br>";
