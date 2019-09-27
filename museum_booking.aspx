@@ -34,9 +34,9 @@
                                 <asp:Textbox runat="server" ID="visitor_phonenumber" placeholder="(905) 569 2906"></asp:Textbox>
                                 <asp:RegularExpressionValidator runat="server" EnableClientScript="true" ControlToValidate="visitor_phonenumber" ErrorMessage="Please give us a valid phone number" ValidationExpression="[(]{0,1}[0-9]{3}[)]{0,1}(\s*|\-+)[0-9]{3}(\s*|\-+)[0-9]{4}"></asp:RegularExpressionValidator>
                                 
-                                <%-- I  found this validation expression from Christine Bittle HTTP5105 Web Application inclass example --%>                             
-                                <%-- Date accessed: 21 September --%>
-                                <%-- Reason to use: valid phone number in assignment 1b --%>
+                                <%/* I  found this validation expression from Christine Bittle HTTP5105 Web Application inclass example */%>                             
+                                <%/* Date accessed: 21 September */%>
+                                <%/* Reason to use: valid phone number in assignment 1b */%>
 
                                 <asp:RequiredFieldValidator runat="server" EnableClientScript="true" ErrorMessage="Please give us a valid phone number" ControlToValidate="visitor_phonenumber"></asp:RequiredFieldValidator>
                             </div>
@@ -54,10 +54,10 @@
                                 <asp:RequiredFieldValidator runat="server" EnableClientScript="true" ErrorMessage="Please give us a valid zip code" ControlToValidate="visitor_zipcode"></asp:RequiredFieldValidator>
                                 <asp:RegularExpressionValidator runat="server" EnableClientScript="true" ErrorMessage="Please give us a valid zip code" ControlToValidate="visitor_zipcode" ValidationExpression="^((\d{5}-\d{4})|(\d{5})|([A-Z]\d[A-Z]\s\d[A-Z]\d))$"></asp:RegularExpressionValidator>
 
-                                <%-- I found this validation expression on Regex Library --%>
-                                <%-- URL: http://regexlib.com/Search.aspx?k=canadian+postal+code&AspxAutoDetectCookieSupport=1 --%>
-                                <%-- Date aceessed: 21 September 2019 --%>
-                                <%-- Reason to use: valid zip code in Assignment 1b --%>
+                                <%/* I found this validation expression on Regex Library */%>
+                                <%/* URL: http://regexlib.com/Search.aspx?k=canadian+postal+code&AspxAutoDetectCookieSupport=1 */%>
+                                <%/* Date aceessed: 21 September 2019 */%>
+                                <%/* Reason to use: valid zip code in Assignment 1b */%>
                             </div>
                             <div>
                                 <label>Email:</label>
@@ -65,10 +65,10 @@
                                 <asp:RequiredFieldValidator runat="server" EnableClientScript="true" ErrorMessage="Please give us a valid email" ControlToValidate="visitor_email"></asp:RequiredFieldValidator>
                                 <asp:RegularExpressionValidator runat="server" EnableClientScript="true" ErrorMessage-="Please give us a valid email" ControlToValidate="visitor_email" ValidationExpression="^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$"></asp:RegularExpressionValidator>
                                 
-                                <%-- I found this validation expression on Regex Library --%>
-                                <%-- URL: http://regexlib.com/Search.aspx?k=email&c=-1&m=-1&ps=20 --%>
-                                <%-- Date aceessed: 21 September 2019 --%>
-                                <%-- Reason to use: valid email in Assignment 1b --%>
+                                <%/* I found this validation expression on Regex Library */%>
+                                <%/* URL: http://regexlib.com/Search.aspx?k=email&c=-1&m=-1&ps=20 */%>
+                                <%/* Date aceessed: 21 September 2019 */%>
+                                <%/* Reason to use: valid email in Assignment 1b */%>
                             </div>
                         </fieldset>
                     </section>
