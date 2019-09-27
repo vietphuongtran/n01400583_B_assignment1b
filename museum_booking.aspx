@@ -34,9 +34,9 @@
                                 <asp:Textbox runat="server" ID="visitor_phonenumber" placeholder="(905) 569 2906"></asp:Textbox>
                                 <asp:RegularExpressionValidator runat="server" EnableClientScript="true" ControlToValidate="visitor_phonenumber" ErrorMessage="Please give us a valid phone number" ValidationExpression="[(]{0,1}[0-9]{3}[)]{0,1}(\s*|\-+)[0-9]{3}(\s*|\-+)[0-9]{4}"></asp:RegularExpressionValidator>
                                 
-                                <%--I found this validation expression from Christine Bittle HTTP5105 Web Application inclass example--%>                             
-                                <%--Date accessed: 21 September--%>
-                                <%--Reason to use: valid phone number in assignment 1b--%>
+                                <%-- I  found this validation expression from Christine Bittle HTTP5105 Web Application inclass example --%>                             
+                                <%-- Date accessed: 21 September --%>
+                                <%-- Reason to use: valid phone number in assignment 1b --%>
 
                                 <asp:RequiredFieldValidator runat="server" EnableClientScript="true" ErrorMessage="Please give us a valid phone number" ControlToValidate="visitor_phonenumber"></asp:RequiredFieldValidator>
                             </div>
